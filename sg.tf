@@ -25,5 +25,6 @@ resource "aws_security_group" "lx_srvr_sg" {
   }
   tags = {
     Name = "linux_sg"
+    Env = "Development"
   }
 }
