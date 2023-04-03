@@ -1,7 +1,6 @@
 resource "aws_security_group" "lx_srvr_sg" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"
-  # vpc_id      = aws_vpc.main.id
 
   ingress {
     description = "To access linux machine"
