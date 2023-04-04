@@ -1,7 +1,7 @@
 resource "aws_instance" "app_server" {
   instance_type   = "t2.medium"
   ami             = "ami-0aa7d40eeae50c9a9"
-  key_name        = "TF"
+  key_name        = "Terra"
   security_groups = ["${aws_security_group.lx_srvr_sg.name}"]
   user_data       = <<-EOF
   #!/bin/bash
