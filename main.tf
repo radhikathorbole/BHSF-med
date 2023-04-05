@@ -16,7 +16,6 @@ resource "aws_instance" "app_server" {
 
   tags = {
     "Name" = "app_server"
-    "Env"  ="development"
   }
 
 }
